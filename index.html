@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="container-fluid">
+  <div class="row">
+    <div class="col-12 text-center">
+      <p>Change Available: <span id="change">$0.00</span> </p>
+    </div>
+    <div class="col-4" draggable="true">
+      <div class="card">
+        <div class="card-body">
+          <input type="checkbox" onclick="app.vendingController.buy('a1')" name="a1" id="a1">
+          <label for="a1">Snickers</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <input type="checkbox" onclick="app.vendingController.buy('a2')" name="a2" id="a2">
+          <label for="a2">Mountain Dew</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <input type="checkbox" onclick="app.vendingController.buy('a3')" name="a3" id="a3">
+          <label for="a3">Cheetos</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./app/main.js" type="module"></script>
+</body>
+
+</html>
